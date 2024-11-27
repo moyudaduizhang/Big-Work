@@ -9,11 +9,9 @@ def open_games(root):
     game_window = Toplevel(root)  # 新窗口  
     game_window.title("小游戏合集")  
     game_window.geometry("800x400")  
-    game_window.configure(bg="#f7f9fc")  # 设置背景颜色  
-
+    game_window.configure(bg="#f7f9fc")  # 设置背景颜色
     font = ('Arial', 20, 'bold')  
-    font_16 = ('Arial', 16)  
-
+    font_16 = ('Arial', 16)
     # 标题标签  
     title_label = tk.Label(  
         game_window,   
@@ -28,13 +26,11 @@ def open_games(root):
     def open_gomoku():  
         gomoku_window = Toplevel(game_window)  
         gomoku_window.title("五子棋")  
-        GomokuGame(gomoku_window)  
-
+        GomokuGame(gomoku_window)
     def open_mathquiz():  
         mathquiz_window = Toplevel(game_window)  
         mathquiz_window.title("数学 Quiz")  
-        MathQuizApp(mathquiz_window)  
-
+        MathQuizApp(mathquiz_window)
     def open_2048():  
         game2048_window = Toplevel(game_window)  
         game2048_window.title("2048")  
